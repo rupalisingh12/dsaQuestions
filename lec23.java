@@ -4,15 +4,21 @@ import java.util.*;
 public class lec23 {
 	public static void main(String args[]) {
 		Scanner sc=new Scanner(System.in);
+		
+//		cans.add(7);
+//		cans.add(6);
+//		cans.add(4);
+//		cans.add(6);
+//		cans.add(10);
+//		cans.add(4);
+//		cans.add(4);
+//		cans.add(54);
+		int n=sc.nextInt();
 		List<Integer>cans=new ArrayList<>();
-		cans.add(7);
-		cans.add(6);
-		cans.add(4);
-		cans.add(6);
-		cans.add(10);
-		cans.add(4);
-		cans.add(4);
-		cans.add(54);
+		
+		for(int i=0;i<n;i++) {
+			cans.add(sc.nextInt());
+		}
 		System.out.print(findTotalWeight(cans));
 		
 		
